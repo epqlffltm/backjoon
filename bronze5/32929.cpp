@@ -1,24 +1,17 @@
 #include <stdio.h>
 
-int main(void) 
-{
+int main() {
+    int n;
+    scanf("%d", &n);
 
-    char UOS[3] = {'U', 'O', 'S'};
+    n -= 1;
+    int r = n % 3;
+    char result;
 
-    int x;
+    if (r == 0) result = 'U';
+    else if (r == 1) result = 'O';
+    else result = 'S';
 
-
-
-    scanf("%d", &x);
-
-
-
-    x = x % 3;//2였다면 쉬프트 가능한데...아까비
-
-    printf("%c\n", UOS[x - 1]);
-
-
-
+    printf("%c\n", result);
     return 0;
-
 }
