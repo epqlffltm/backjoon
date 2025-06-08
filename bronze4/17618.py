@@ -12,3 +12,4 @@ def count_harshad(N):
 if __name__ == "__main__":
     N = int(input())
     print(count_harshad(N))
+#78점 받음...
