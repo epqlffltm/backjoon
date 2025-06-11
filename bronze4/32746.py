@@ -1,0 +1,1 @@
+print("SciComLove"[::1 if int(input()) % 2 == 0 else -1])
